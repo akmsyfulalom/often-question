@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
@@ -12,6 +12,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/', element: <Main></Main>, children: [
+
         {
           path: '/topics',
           loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
@@ -20,10 +21,11 @@ function App() {
         { path: '/statistics', element: <Statstics></Statstics> },
         { path: '/blog', element: <Blog></Blog> },
         {
-          path: '/quiz',
-          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz/1'),
+          path: '/quiz/:quizId',
+          loader: async ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`),
           element: <Quiz></Quiz>
         }
+
       ]
     },
     { path: '*', element: <div>404 error</div> }
