@@ -6,10 +6,11 @@ const Topics = () => {
     const data = useLoaderData()
     const topics = data.data
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center  '>
             <div >
-                <div className='text-4xl font-bold my-16 '>
-                    <h1>This is my header</h1>
+                <div className=' text-center my-16 '>
+                    <h1 className='text-4xl font-bold   '>Learn by testing yourself</h1>
+                    <p className='font-bold'>We have created quizzes here on four topics. You can proceed by clicking on Start Quiz. </p>
                 </div>
                 <div className='flex topics '>
                     {
