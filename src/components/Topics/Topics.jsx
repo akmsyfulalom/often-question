@@ -12,7 +12,7 @@ const Topics = () => {
                     <h1 className='text-4xl font-bold   '>Learn by testing yourself</h1>
                     <p className='font-bold'>We have created quizzes here on four topics. You can proceed by clicking on Start Quiz. </p>
                 </div>
-                <div className='flex topics '>
+                <div className=' topics'>
                     {
                         topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
                     }
