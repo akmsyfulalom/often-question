@@ -5,8 +5,8 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div className='sm:justify-between md:flex  px-24 shadow-lg p-5 items-center'>
-            <div className='text-4xl font-bold'>
-                <h1>Often Question</h1>
+            <div className='text-4xl font-bold hover:text-slate-400'>
+                <Link to={'/'}>Often Question</Link>
             </div>
             <div className='navbar '>
                 <Link to='/topics'>Topics</Link>
