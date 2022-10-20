@@ -1,7 +1,7 @@
 import React from 'react';
 import ChoseAns from '../ChoseAns/ChoseAns';
 import { EyeIcon } from '@heroicons/react/24/solid'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Questions = ({ quiz }) => {

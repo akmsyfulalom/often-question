@@ -20,7 +20,7 @@ const ChoseAns = ({ option, correctAnswer }) => {
     return (
         <div>
 
-            <div onClick={result} className='cursor-pointer flex m-5 bg-white py-3 px-2 rounded-lg font-bold hover:bg-slate-400 hover:text-white'>
+            <div onClick={result} className=' cursor-pointer flex m-5 bg-white py-3 px-2 rounded-lg font-bold hover:bg-slate-400 hover:text-white'>
                 <input onClick={result} className='cursor-pointer mr-1' type="radio" name="option" id="" />
                 <ToastContainer />
                 <p>{option}</p>
